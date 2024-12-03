@@ -10,12 +10,14 @@
     <a href="https://jameshujy.github.io/" target="_blank">Jinyi Hu</a>,
     <a href="https://willieneis.github.io/" target="_blank">Willie Neiswanger</a>
 </div>
-
+<br>
 <div align="center">
-[<a href="https://arxiv.org/abs/2412.01415">paper</a>]
-[<a href="https://euclid-llm.github.io/">website</a>]
-[<a href="https://huggingface.co/Qwen/Euclid-ConvNeXt-Large">huggingface</a>(Euclid Models)]
-[<a href="https://huggingface.co/Qwen/Euclid-ConvNeXt-Large">huggingface</a>(Geoperception Dataset)]
+[<a href="https://arxiv.org/abs/2412.01415">paper</a> 📄]
+[<a href="https://euclid-llm.github.io/">website</a> 🌐]
+[<a href="https://huggingface.co/datasets/EuclidAI/Geoperception">Geoperception</a> 🤗]
+<br>
+[<a href="https://huggingface.co/EuclidAI/Euclid-convnext-large">Euclid convnext-large</a> 🤗]
+[<a href="https://huggingface.co/EuclidAI/Euclid-convnext-xxlarge">Euclid convnext-xxlarge</a> 🤗]
 <br>
 <hr>
 </div>
@@ -133,7 +135,18 @@ Important Training Arguments:
 - `--stages`: The stages of the empirical study, for all tasks we have 3 stages currently.
 - `--attenuation_rate`: Set to 0 for static (single stage or mixed) training in empirical study, set to 1.5 (default) for curriculum learning.
 
+## Citation
 
+If you find Euclid useful for your research and applications, please cite using this BibTeX:
+```bibtex
+@misc{euclid,
+    title={Euclid: Supercharging Multimodal LLMs with Synthetic High-Fidelity Visual Descriptions},
+    url={https://euclid-llm.github.io/},
+    author={Zhang, Jiarui and Liu, Ollie and Yu, Tianyu and Hu, Jinyi and Neiswanger, Willie},
+    month={December},
+    year={2024}
+}
+```
 
 ## Acknowledgements
 [LLaVA](https://github.com/haotian-liu/LLaVA): The codebase that our training framework is built on.
