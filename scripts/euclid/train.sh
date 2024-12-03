@@ -1,0 +1,33 @@
+python euclid/train/euclid_train.py \
+    --language_model "Qwen/Qwen2.5-1.5B-Instruct" \
+    --vision_tower "laion/CLIP-convnext_large_d_320.laion2B-s29B-b131K-ft-soup" \
+    --output_dir "./checkpoints/euclid-qwen-conv_large" \
+    --test_data_path playground/data/euclid/data.json \
+    --tasks "LineComparison,AngleClassification,Perpendicular,Parallel,PointLiesOnLine,PointLiesOnCircle,Equal" \
+    --stages "1,2,3" \
+    --save_steps 50000 \
+    --per_device_eval_batch_size 30 \
+    --eval_steps 500 \
+    --logging_steps 1 \
+    --per_device_train_batch_size 16 \
+    --gradient_accumulation_steps 4 \
+    --predict_with_generate True \
+    --gradient_checkpointing False \
+    --num_train_epochs 50
+
+python euclid/train/euclid_train.py \
+    --language_model "Qwen/Qwen2.5-1.5B-Instruct" \
+    --vision_tower "laion/CLIP-convnext_xxlarge-laion2B-s34B-b82K-augreg-soup" \
+    --output_dir "./checkpoints/euclid-qwen-conv_xxl" \
+    --test_data_path playground/data/euclid/data.json \
+    --tasks "LineComparison,AngleClassification,Perpendicular,Parallel,PointLiesOnLine,PointLiesOnCircle,Equal" \
+    --stages "1,2,3" \
+    --save_steps 50000 \
+    --per_device_eval_batch_size 30 \
+    --eval_steps 500 \
+    --logging_steps 1 \
+    --per_device_train_batch_size 16 \
+    --gradient_accumulation_steps 4 \
+    --predict_with_generate True \
+    --gradient_checkpointing False \
+    --num_train_epochs 50
