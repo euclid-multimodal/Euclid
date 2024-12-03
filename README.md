@@ -1,9 +1,6 @@
 <p align="center">
   <img src="./playground/demo_images/euclid_symbol.png" alt="Euclid" width="150">
-  <br>
-  <h1>
-  Supercharging Multimodal LLMs with Synthetic High-Fidelity Visual Descriptions
-</h1>
+  <h1 align="center" style="margin-top: -20px;">Supercharging Multimodal LLMs with Synthetic High-Fidelity Visual Descriptions</h1>
 </p>
 
 <div style="font-family: charter;">
