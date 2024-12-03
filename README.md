@@ -3,7 +3,7 @@
   <h1 align="center" style="margin-top: -20px;">Supercharging Multimodal LLMs with Synthetic High-Fidelity Visual Descriptions</h1>
 </p>
 
-<div style="font-family: charter;">
+<div style="font-family: charter;" align="center">
     <a href="https://saccharomycetes.github.io/" target="_blank">Jiarui Zhang</a>,
     <a href="https://ollieliu.com/" target="_blank">Ollie Liu</a>,
     <a href="https://github.com/yiranyyu" target="_blank">Tianyu Yu</a>,
