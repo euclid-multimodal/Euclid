@@ -21,7 +21,6 @@ def produce_shape_datas():
         'Perpendicular': {},
         'Equal': {},
         'PointLiesOnLine_empirical': {},
-        'AngleClassification_empirical': {},
         'LineComparison_empirical': {},
     }
 
@@ -36,7 +35,6 @@ def produce_shape_datas():
         shape_datas['Parallel'][level] = []
         shape_datas['Perpendicular'][level] = []
         shape_datas['PointLiesOnLine_empirical'][level] = []
-        shape_datas['AngleClassification_empirical'][level] = []
         shape_datas['LineComparison_empirical'][level] = []
 
     # point lies on line
@@ -539,25 +537,6 @@ def produce_shape_datas():
         'orcle_text': 'A B C = triangle A B C; D = midpoint B C; E = midpoint A C; F = intersection_ll A D B E',
         'connection_list': 'AB, AC, BC, DA, BE',
         'points_set': ['AFD', 'ACE', 'BFE', 'BDC']
-    })
-
-    shape_datas['AngleClassification_empirical']['level_1'].append({
-        'orcle_text': f"A B C = triangle A B C",
-        'connection_list': 'AB, AC',
-        'points_set': ['BAC'],
-        'letters': 'ABCDEF'
-    })
-    shape_datas['AngleClassification_empirical']['level_2'].append({
-        'orcle_text': f"A B C = triangle A B C",
-        'connection_list': 'AB, AC, BC',
-        'points_set': ['ABC', 'BCA', 'CAB'],
-        'letters': 'ABCDEF'
-    })
-    shape_datas['AngleClassification_empirical']['level_3'].append({
-        'orcle_text': 'A B C = triangle A B C; D = midpoint B C',
-        'connection_list': 'AB, AC, AD',
-        'points_set': ['BAD', 'ABD', 'BDA', 'DAC', 'ACD', 'ADC', 'BAC'],
-        'letters': 'ABCDEF'
     })
 
 

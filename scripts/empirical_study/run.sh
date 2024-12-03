@@ -6,8 +6,9 @@ run_training() {
     local epochs=$5
 
     python llava/train/euclid_train.py \
-        --model_name_or_path "$llm" \
+        --language_model "$llm" \
         --vision_tower "$vision_tower" \
+        --tune_vision_tower False \
         --output_dir "./checkpoints/euclid-qwen-${llm}-${vision_tower}-${task}-${stages}" \
         --test_data_path playground/data/testing_data/data.json \
         --tasks "$task" \
