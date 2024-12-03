@@ -3,10 +3,6 @@
   <h4 align="center" style="margin-top: -20px;">Supercharging Multimodal LLMs with Synthetic High-Fidelity Visual Descriptions</h4>
 </p>
 
-<p align="center">
-  <img src="./playground/demo_images/geoperception_examples.png" alt="Geoperception" width="600">
-</p>
-
 <div style="font-family: charter;" align="center">
     <a href="https://saccharomycetes.github.io/" target="_blank">Jiarui Zhang</a>,
     <a href="https://ollieliu.com/" target="_blank">Ollie Liu</a>,
@@ -23,6 +19,10 @@
 <br>
 <hr>
 </div>
+
+<p align="center">
+  <img src="./playground/demo_images/geoperception_examples.png" alt="Geoperception" width="600">
+</p>
 
 A study of low-level geometric understanding of multimodal LLMs including:
 
