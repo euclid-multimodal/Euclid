@@ -1,6 +1,6 @@
 <p align="center">
   <img src="./playground/demo_images/euclid_symbol.png" alt="Euclid" width="150">
-  <h1 align="center" style="margin-top: -20px;">Supercharging Multimodal LLMs with Synthetic High-Fidelity Visual Descriptions</h1>
+  <h4 align="center" style="margin-top: -20px;">Supercharging Multimodal LLMs with Synthetic High-Fidelity Visual Descriptions</h4>
 </p>
 
 <p align="center">
@@ -15,9 +15,14 @@
     <a href="https://willieneis.github.io/" target="_blank">Willie Neiswanger</a>
 </div>
 
-[[paper](https://arxiv.org/abs/2412.01415)]
-[[website](https://euclid-llm.github.io/)]
-[[huggingface](https://huggingface.co/Qwen/Euclid-ConvNeXt-Large)]
+<div align="center">
+[<a href="https://arxiv.org/abs/2412.01415">paper</a>]
+[<a href="https://euclid-llm.github.io/">website</a>]
+[<a href="https://huggingface.co/Qwen/Euclid-ConvNeXt-Large">huggingface</a>(Euclid Models)]
+[<a href="https://huggingface.co/Qwen/Euclid-ConvNeXt-Large">huggingface</a>(Geoperception Dataset)]
+<br>
+<hr>
+</div>
 
 A study of low-level geometric understanding of multimodal LLMs including:
 
