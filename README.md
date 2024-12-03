@@ -1,4 +1,8 @@
-<h1 align="center"><span style="background: linear-gradient(90deg, rgb(65,105,225), rgb(128,0,128)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-size: 2em;">Euclid</span>: <br> Supercharging Multimodal LLMs with Synthetic High-Fidelity Visual Descriptions</h1>
+<p align="center">
+  <img src="./playground/demo_images/euclid_symbol.png" alt="Euclid" width="150">
+  <br>
+  Supercharging Multimodal LLMs with Synthetic High-Fidelity Visual Descriptions
+</p>
 
 <div style="font-family: charter;">
     <a href="https://saccharomycetes.github.io/" target="_blank">Jiarui Zhang</a>,
