@@ -15,6 +15,10 @@
     <a href="https://willieneis.github.io/" target="_blank">Willie Neiswanger</a>
 </div>
 
+[[paper](https://arxiv.org/abs/2412.01415)]
+[[website](https://euclid-llm.github.io/)]
+[[huggingface](https://huggingface.co/Qwen/Euclid-ConvNeXt-Large)]
+
 A study of low-level geometric understanding of multimodal LLMs including:
 
 - A focused benchmark (Geoperception)
