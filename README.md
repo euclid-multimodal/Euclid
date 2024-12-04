@@ -102,7 +102,9 @@ bash scripts/empirical_study/run.sh
 ```
 
 ### Euclid Training Example Script 
-Training Euclid-ConvNeXt-Large takes around 16 hours on a single A100-80GB GPU, and training Euclid-ConvNeXt-XXL takes around 24 hours on a single A100-80GB GPU. 
+Training Euclid-ConvNeXt-Large takes around 16 hours on a single A100-80GB GPU.
+
+Training Euclid-ConvNeXt-XXLarge takes around 24 hours on a single A100-80GB GPU. 
 
 ```
 bash scripts/euclid_training/run.sh
@@ -134,6 +136,25 @@ Important Training Arguments:
   - **LineComparison_empirical** (for empirical study only)
 - `--stages`: The stages of the empirical study, for all tasks we have 3 stages currently.
 - `--attenuation_rate`: Set to 0 for static (single stage or mixed) training in empirical study, set to 1.5 (default) for curriculum learning.
+
+## Geoperception
+
+Download the dataset:
+
+```
+from datasets import load_dataset
+loaded_dataset = load_dataset("EuclidAI/Geoperception")['train']
+```
+
+You can also directly evaluate the Euclid model on the Geoperception dataset by running (this will download the dataset automatically):
+```
+python euclid/eval/run_geo.py --model_path $MODEL_PATH --device cuda
+```
+
+To evaluate your own model on the Geoperception dataset, you should append the detailed instruction to the original question to make the model follow the format of the answer, then parse the model's prediction and compute the accuracy using the function `compute_accuracy` in [answer_parser.py](./euclid/eval/answer_parser.py).
+
+You can find the model's prediction format instruction in [general_eval_prompt.json](./euclid/eval/general_eval_prompt.json).
+
 
 ## Citation
 

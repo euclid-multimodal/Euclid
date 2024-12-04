@@ -1,6 +1,7 @@
 import torch
 from PIL import Image
 import requests
+from datasets import load_dataset
 from io import BytesIO
 from transformers import TextStreamer
 import argparse
@@ -25,7 +26,6 @@ def load_image(image_file):
     else:
         image = Image.open(image_file).convert('RGB')
     return image
-
 
 class qa():
     def __init__(self, model, tokenizer, image_processor):
@@ -93,7 +93,7 @@ def answer_match(task, pred, gt):
 def main(args):
     model_path = args.model_path
     model_base = None
-    device = "cuda:0"
+    device = "cuda"
     disable_torch_init()
 
     model_name = get_model_name_from_path(model_path)
@@ -104,13 +104,11 @@ def main(args):
     qa_model = qa(model, tokenizer, image_processor)
 
     accs = {}
-    with open('playground/downstream/geoperception/geoperception/geoperception_data.json', 'r') as f:
-        all_data = json.load(f)
-    points_on_line_data = [data for data in all_data if data['predicate'] == 'Equals']
+    all_data = load_dataset("EuclidAI/Geoperception")['train']
 
     for data in tqdm(all_data, ncols=100):
         conv = conv_templates[conv_mode].copy()
-        image = load_image(f'playground/downstream/geoperception/data/{data["data_point"]}/img_diagram.png')
+        image = data['image'].convert('RGB')
         input_text = f"<image>\n{data['question']}"
         conv = conv_templates[conv_mode].copy()
         conv.append_message(conv.roles[0], input_text)
@@ -141,12 +139,10 @@ def main(args):
         accs[data['predicate']].append(acc)
     for task, accs in accs.items():
         print(f'{task}: {sum(accs)/len(accs):.4f}')
-    # with open('playground/geo3k/version_1_acc.txt', 'a') as f:
-    #     f.write(f'{model_path.split("/")[-1]:<30}: {acc:.4f}\n')
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--model_path', type=str, default="checkpoints/euclid-qwen-euclid_conv_large")
-    parser.add_argument('--device', type=str, default="cuda:0")
+    parser.add_argument('--device', type=str, default="cuda")
     args = parser.parse_args()
     main(args)
