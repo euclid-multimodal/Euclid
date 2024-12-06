@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "euclid"
+version = "1.0.0"
+description = "Euclid dependencies"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+]
+dependencies = [
+    "torch==2.1.2", "torchvision==0.16.2",
+    "transformers==4.45.2", "tokenizers==0.20.0", "sentencepiece==0.1.99", "shortuuid==1.0.13",
+    "accelerate==1.0.0", "peft==0.13.0", "bitsandbytes==0.44.1",
+    "pydantic==2.9.2", "markdown2[all]", "numpy==1.26.4", "scikit-learn==1.2.2",
+    "gradio==4.16.0", "gradio_client==0.8.1",
+    "requests", "httpx==0.24.0", "uvicorn==0.31.0", "fastapi==0.115.0",
+    "einops==0.6.1", "einops-exts==0.0.4", "timm==1.0.9",
+    "open_clip_torch==2.26.1", "absl-py==2.1.0", "datasets==3.1.0"
+]
+
+[project.optional-dependencies]
+train = ["deepspeed==0.12.6", "ninja", "wandb"]
+build = ["build", "twine"]
+
+[project.urls]
+"Homepage" = "https://llava-vl.github.io"
+"Bug Tracker" = "https://github.com/haotian-liu/LLaVA/issues"
+
+[tool.setuptools.packages.find]
+exclude = ["assets*", "benchmark*", "docs", "dist*", "playground*", "scripts*", "tests*"]
+
+[tool.wheel]
+exclude = ["assets*", "benchmark*", "docs", "dist*", "playground*", "scripts*", "tests*"]
