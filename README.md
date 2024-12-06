@@ -31,7 +31,7 @@ This project studies the low-level geometric understanding of multimodal LLMs, i
 
 - **Geoperception Benchmark**: First benchmark focusing specifically on fine-grained low-level geometric perception in MLLMs.
 - **Synthetic Data Engine + Empirical Study**: A comprehensive study of the multimodal LLM design space using our developed synthetic data engine (We found that data curriculum is helpful).
-- **Euclid Model**: Two less than 3B models surpassing the current SOTA models on Geoperception.
+- **Euclid Model**: Two less than 3B models surpassing the current proprietary MLLMs on Geoperception.
 
 
 
