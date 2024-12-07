@@ -218,7 +218,7 @@ Then run:
 python euclid/eval/run_euclid_geo.py --model_path $MODEL_PATH --device cuda
 ```
 
-Other usage: Our current Euclid model can only follow specific instructions, so it is challenging to use it as a general-purpose MLLM. However, 
+Other usage: Our current Euclid model can only follow specific instructions, so it is challenging to use it as a general-purpose MLLM. However, the model demonstrates strength in low-level visual perception, this capability makes it potentially valuable for serving as a base model for specialized downstream tasks requiring high-fidelity low-level visual understanding.
 
 ## Citation
 
