@@ -12,7 +12,7 @@
 </div>
 <br>
 <div align="center">
-[<a href="https://arxiv.org/abs/2412.01415">paper</a> 📄]
+[<a href="https://arxiv.org/abs/2412.08737">paper</a> 📄]
 [<a href="https://euclid-multimodal.github.io/">website</a> 🌐]
 [<a href="https://huggingface.co/datasets/EuclidAI/Geoperception">Geoperception</a> 🤗]
 <br>
@@ -223,13 +223,12 @@ Other usage: Our current Euclid model can only follow specific instructions, so 
 ## Citation
 
 If you find Euclid useful for your research and applications, please cite using this BibTeX:
-```bibtex
-@misc{euclid,
-    title={Euclid: Supercharging Multimodal LLMs with Synthetic High-Fidelity Visual Descriptions},
-    url={https://euclid-llm.github.io/},
-    author={Zhang, Jiarui and Liu, Ollie and Yu, Tianyu and Hu, Jinyi and Neiswanger, Willie},
-    month={December},
-    year={2024}
+```bibtex 
+@article{zhang2024euclid,
+  title={Euclid: Supercharging Multimodal LLMs with Synthetic High-Fidelity Visual Descriptions},
+  author={Zhang, Jiarui and Liu, Ollie and Yu, Tianyu and Hu, Jinyi and Neiswanger, Willie},
+  journal={arXiv preprint arXiv:2412.08737},
+  year={2024}
 }
 ```
 
