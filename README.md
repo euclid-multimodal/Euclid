@@ -14,7 +14,7 @@
 <div align="center">
 [<a href="https://arxiv.org/abs/2412.08737">paper</a> 📄]
 [<a href="https://euclid-multimodal.github.io/">website</a> 🌐]
-[<a href="https://huggingface.co/papers/2412.08737">huggingface</a> 🌐]
+[<a href="https://huggingface.co/papers/2412.08737">huggingface</a> 🤗]
 <br>
 [<a href="https://huggingface.co/datasets/EuclidAI/Geoperception">Geoperception</a> 🤗]
 [<a href="https://huggingface.co/EuclidAI/Euclid-convnext-large">Euclid convnext-large</a> 🤗]
