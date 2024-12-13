@@ -37,7 +37,7 @@ This project studies the low-level geometric understanding of multimodal LLMs, i
 
 
 ## Updates
-- [12/05/24] 🔥 Euclid paper is released! We also release our dataset generation engine and training scripts.
+- [12/13/24] 🔥 Euclid paper is released! We also release our dataset generation engine and training scripts.
 
 
 ## Installation
