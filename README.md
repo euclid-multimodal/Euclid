@@ -16,9 +16,9 @@
 [<a href="https://euclid-multimodal.github.io/">website</a> 🌐]
 [<a href="https://huggingface.co/papers/2412.08737">huggingface</a> 🤗]
 <br>
-[<a href="https://huggingface.co/datasets/EuclidAI/Geoperception">Geoperception</a> 🤗]
-[<a href="https://huggingface.co/EuclidAI/Euclid-convnext-large">Euclid convnext-large</a> 🤗]
-[<a href="https://huggingface.co/EuclidAI/Euclid-convnext-xxlarge">Euclid convnext-xxlarge</a> 🤗]
+[<a href="https://huggingface.co/datasets/euclid-multimodal/Geoperception">Geoperception</a> 🤗]
+[<a href="https://huggingface.co/euclid-multimodal/Euclid-convnext-large">Euclid convnext-large</a> 🤗]
+[<a href="https://huggingface.co/euclid-multimodal/Euclid-convnext-xxlarge">Euclid convnext-xxlarge</a> 🤗]
 <br>
 <hr>
 </div>
