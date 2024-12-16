@@ -17,8 +17,8 @@
 [<a href="https://huggingface.co/papers/2412.08737">huggingface</a> 🤗]
 <br>
 [<a href="https://huggingface.co/datasets/euclid-multimodal/Geoperception">Geoperception</a> 🤗]
-[<a href="https://huggingface.co/euclid-multimodal/Euclid-convnext-large">Euclid convnext-large</a> 🤗]
-[<a href="https://huggingface.co/euclid-multimodal/Euclid-convnext-xxlarge">Euclid convnext-xxlarge</a> 🤗]
+[<a href="https://huggingface.co/euclid-multimodal/Euclid-convnext-large-120524">Euclid convnext-large</a> 🤗]
+[<a href="https://huggingface.co/euclid-multimodal/Euclid-convnext-xxlarge-120524">Euclid convnext-xxlarge</a> 🤗]
 <br>
 <hr>
 </div>
@@ -205,8 +205,8 @@ Important Training Arguments:
 
 ## Euclid Models
 
-- [Euclid-ConvNeXt-Large](https://huggingface.co/euclid-multimodal/Euclid-convnext-large)
-- [Euclid-ConvNeXt-XXLarge](https://huggingface.co/euclid-multimodal/Euclid-convnext-xxlarge)
+- [Euclid-ConvNeXt-Large](https://huggingface.co/euclid-multimodal/Euclid-convnext-large-120524)
+- [Euclid-ConvNeXt-XXLarge](https://huggingface.co/euclid-multimodal/Euclid-convnext-xxlarge-120524)
 
 To evaluate the Euclid models on the Geoperception dataset, first download the model by:
 ```
