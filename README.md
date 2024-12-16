@@ -62,7 +62,7 @@ Download the dataset:
 
 ```
 from datasets import load_dataset
-loaded_dataset = load_dataset("EuclidAI/Geoperception")['train']
+loaded_dataset = load_dataset("euclid-multimodal/Geoperception")['train']
 ```
 
 You can also directly evaluate the Euclid model on the Geoperception dataset by running (this will download the dataset automatically):
@@ -205,13 +205,13 @@ Important Training Arguments:
 
 ## Euclid Models
 
-- [Euclid-ConvNeXt-Large](https://huggingface.co/EuclidAI/Euclid-convnext-large)
-- [Euclid-ConvNeXt-XXLarge](https://huggingface.co/EuclidAI/Euclid-convnext-xxlarge)
+- [Euclid-ConvNeXt-Large](https://huggingface.co/euclid-multimodal/Euclid-convnext-large)
+- [Euclid-ConvNeXt-XXLarge](https://huggingface.co/euclid-multimodal/Euclid-convnext-xxlarge)
 
 To evaluate the Euclid models on the Geoperception dataset, first download the model by:
 ```
 pip install -U "huggingface_hub[cli]"
-huggingface-cli download --cache-dir $MODEL_PATH EuclidAI/Euclid-convnext-large
+huggingface-cli download --cache-dir $MODEL_PATH euclid-multimodal/Euclid-convnext-large
 ```
 
 Then run:
