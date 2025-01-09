@@ -24,7 +24,7 @@
 </div>
 
 <p align="center">
-  <img src="./playground/demo_images/geoperception_examples.png" alt="Geoperception" width="600">
+  <img src="./playground/demo_images/euclid_profile.jpeg" alt="Geoperception" width="600">
 </p>
 
 This project studies the low-level geometric understanding of multimodal LLMs, including:
